@@ -18,7 +18,7 @@ app.use(middleware.logger);
 
 console.log('Server starting... ');
 app.get('/about', middleware.requireAuthentication, function(req, res){
-	res.send('This is an Express server');
+	res.send('This is an Express server!');
 });
 
 app.use(express.static(__dirname + '/public'))
